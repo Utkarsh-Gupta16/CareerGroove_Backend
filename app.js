@@ -13,8 +13,8 @@ const app = express();
 dotenv.config({ path: "./config/config.env" });
 
 app.use(cors({
-    origin: 'https://careergroove.netlify.app', 
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+origin: [process.env.FRONTEND_URL],   
+ methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true, 
 }));
 
