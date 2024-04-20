@@ -13,7 +13,7 @@ const app = express();
 dotenv.config({ path: "./config/config.env" });
 
 app.use(cors({
-    origin: 'http://localhost:5173', 
+    origin: 'https://careergroove.netlify.app', 
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true, 
 }));
